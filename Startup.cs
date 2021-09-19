@@ -14,6 +14,7 @@ using MudBlazor.Services;
 using TestingMudBlazor.CRUD.Models;
 using TestingMudBlazor.CRUD.Settings;
 using Microsoft.EntityFrameworkCore;
+using TestingMudBlazor.CRUD.Services;
 
 namespace TestingMudBlazor.CRUD
 {
@@ -38,6 +39,7 @@ namespace TestingMudBlazor.CRUD
             services.AddControllersWithViews().AddRazorRuntimeCompilation(); //This is added for to see cshtml changes without restarting app.
             services.AddMudServices();
             services.AddControllersWithViews();
+            services.AddScoped<IItemService, ItemService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
