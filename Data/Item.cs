@@ -13,8 +13,8 @@ namespace  TestingMudBlazor.CRUD.Data
         public int Price { get; set; }
         public int Weight { get; set; }
         public int Durability { get; set; }
-        public int Attack { get; set; }
-        public int Defence { get; set; }
+        public int Damage { get; set; }
+        public string Info { get; set; }
 
     }
 
